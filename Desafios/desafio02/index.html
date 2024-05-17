@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Desafio Boas-Vindas</title>
+  </head>
+  <body>
+    <div class="alinhamento">
+      <main class="container">
+        <div class="container__conteudo">
+          <h1 id="texto__h1" class="container__texto">
+            Desafio de Boas-Vindas
+          </h1>
+        </div>
+        <div class="container__campo">
+          <label class="texto__paragrafo">Qual o seu nome: </label>
+          <input class="container__input" id="nome" type="text" />
+        </div>
+        <div class="container__campo">
+          <label class="texto__paragrafo">Quantos anos tem: </label>
+          <input class="container__input" id="anos" type="number" />
+        </div>
+        <div class="container__botao container__espaco">
+          <button onclick="clicar()" id="btn-1" class="container__botao">
+            Clique Aqui
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
