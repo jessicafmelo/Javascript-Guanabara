@@ -22,4 +22,12 @@ Curso de Js Gustavo Guanabara, estou me desafiando e criando o html e css simple
 ---
 
 - **Desafio 3**
-  - :construction: Em Construção :construction:
+
+  - Digitar um número e aparecer o seu antecessor e sucessor.
+
+  ![Desafio-3](assets/desafio03.gif)
+
+  ***
+
+- **Desafio 4**
+  - :construction: :construction::construction:
