@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Verificador de idade</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+      <div class="container__campo">
+        <label class="texto__paragrafo">Ano de Nascimento: </label>
+        <input class="container__input" id="nascimento" type="number" />
+      </div>
+      <div class="container__campo">
+        <label class="texto__paragrafo">Sexo: </label>
+        <input type="radio" name="sexo" id="masculino" value="Masculino" />
+        <label for="masculino" class="bt__escolha">Masculino</label>
+        <input type="radio" name="sexo" id="feminino" value="Feminino" />
+        <label for="feminino" class="bt__escolha">Feminino</label>
+      </div>
+      <div class="container__bt">
+        <button onclick="clicar()" id="btn-1" class="container__botao">
+          Verificar
+        </button>
+      </div>
+      <div id="msg"></div>
+      <div>
+        <img id="imagem" src="" alt="" />
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Jéssica Melo</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
