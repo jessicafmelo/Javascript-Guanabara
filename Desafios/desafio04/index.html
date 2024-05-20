@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculando o Troco</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container__titulo">Calculando o Troco</h1>
+      <div class="container__dados">
+        <div class="container__campo">
+          <label class="texto__paragrafo">Produto: </label>
+          <input class="container__input" id="produto" type="text" />
+        </div>
+        <div class="container__campo">
+          <label class="texto__paragrafo">Valor do Produto: </label>
+          <input class="container__input" id="valor" type="number" />
+        </div>
+        <div class="container__campo">
+          <label class="texto__paragrafo">Valor Pago: </label>
+          <input class="container__input" id="pago" type="number" />
+        </div>
+      </div>
+      <button onclick="clicar()" id="btn-1" class="container__botao">
+        Comprar Produto
+      </button>
+      <div id="resposta" class="container__resposta"></div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

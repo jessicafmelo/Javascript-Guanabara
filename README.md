@@ -27,7 +27,15 @@ Curso de Js Gustavo Guanabara, estou me desafiando e criando o html e css simple
 
   ![Desafio-3](assets/desafio03.gif)
 
-  ***
+---
 
 - **Desafio 4**
-  - :construction: :construction::construction:
+
+  - Digitar o nome do produto, valor do produto e valor pago, informar uma mensagem com o total do troco.
+
+  ![Desafio-4](assets/desafio04.gif)
+
+---
+
+- **Desafio 5**
+  - :construction: :construction: :construction:
