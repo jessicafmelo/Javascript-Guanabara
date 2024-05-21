@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tabuada</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tabuada</h1>
+    </header>
+
+    <section>
+      <div class="container__caixa">
+        <div class="container__campo">
+          <label class="texto__paragrafo">Número: </label>
+          <input class="container__input" id="num" type="number" />
+        </div>
+        <div class="container__bt">
+          <button onclick="clicar()" id="btn" class="container__botao">
+            Gerar Tabuada
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p id="tabuada"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Jéssica Melo</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
