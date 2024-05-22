@@ -1,19 +1,28 @@
 function clicar() {
-  let inicio = parseInt(document.getElementById("inicio").value);
-  let fim = parseInt(document.getElementById("fim").value);
-  let passo = parseInt(document.getElementById("passo").value);
+  let inicio = document.getElementById("inicio");
+  let fim = document.getElementById("fim");
+  let passo = document.getElementById("passo");
 
   // Obtém o elemento onde será exibida a contagem
   let contagem = document.getElementById("contagem");
   contagem.innerHTML = ""; // Limpa o conteúdo anterior
 
-  // Verifica se o passo é válido
-  if (passo <= 0) {
-    alert("Passo inválido! Considerando PASSO 1");
-    passo = 1;
-  } else if (inicio)
+  if (
+    inicio.value.length == 0 ||
+    fim.value.length == 0 ||
+    passo.value.length == 0
+  ) {
+    contagem.innerHTML = "Existe campos em branco, digite novamente";
+  } else {
+    inicio = parseInt(inicio.value);
+    fim = parseInt(fim.value);
+    passo = parseInt(passo.value);
+    if (passo <= 0) {
+      alert("Passo inválido! Considerando PASSO 1");
+      passo = 1;
+    }
+    // Verifica se o passo é válido
     if (inicio < fim) {
-      // Verifica se o início é menor ou maior que o fim
       // Contagem crescente
       for (let i = inicio; i <= fim; i += passo) {
         contagem.innerHTML += `${i} \u{1F449} `;
@@ -24,5 +33,6 @@ function clicar() {
         contagem.innerHTML += `${i} \u{1F449} `;
       }
     }
-  contagem.innerHTML += ` \u{1F6A8}`;
+    contagem.innerHTML += ` \u{1F6A8}`;
+  }
 }
